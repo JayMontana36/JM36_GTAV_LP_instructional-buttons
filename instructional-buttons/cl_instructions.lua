@@ -18,6 +18,9 @@ local function setupScaleform(scaleform, data)
     while not HasScaleformMovieLoaded(scaleform) do
         Citizen.Wait(0)
     end
+    
+    DrawScaleformMovieFullscreen(scaleform, 255, 255, 255, 0, 0)
+    
     PushScaleformMovieFunction(scaleform, "CLEAR_ALL")
     PopScaleformMovieFunctionVoid()
 
